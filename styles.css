@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.gift-card {
+    width: 350px;
+    padding: 20px;
+    border: 2px solid #ff6f61;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.header {
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.footer {
+    margin-top: 15px;
+    border-top: 1px dashed #ff6f61;
+    padding-top: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
