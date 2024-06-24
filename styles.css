@@ -5,23 +5,24 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    background: linear-gradient(to right, #2c2c2c, #1a1a1a);
 }
 
 .gift-card {
     width: 400px;
     padding: 20px;
-    border: none;
+    border: 2px solid #8b0000;
     border-radius: 15px;
-    background: linear-gradient(to bottom, #ffffff, #ffe6e6);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to bottom, #333, #000);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     position: relative;
     overflow: hidden;
+    color: white;
 }
 
 .header {
-    background-color: #ff6f61;
+    background-color: #8b0000;
     color: white;
     border-radius: 15px 15px 0 0;
     padding: 15px 0;
@@ -41,37 +42,28 @@ body {
 .content p {
     margin: 15px 0;
     font-size: 18px;
-    color: #333;
+    color: #ddd;
 }
 
-.balloons {
+.roses {
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-.balloon {
-    width: 50px;
-    height: 80px;
-    background: radial-gradient(circle, rgba(255,255,255,0.6), #ff6f61);
-    border-radius: 50% 50% 0 0;
-    position: relative;
+.rose {
+    width: 80px;
+    height: auto;
     margin: 0 10px;
     animation: float 3s ease-in-out infinite;
 }
 
-#balloon1 {
-    background: radial-gradient(circle, rgba(255,255,255,0.6), #ff6f61);
+#rose1 {
+    animation-delay: 0s;
 }
 
-#balloon2 {
-    background: radial-gradient(circle, rgba(255,255,255,0.6), #ffab61);
-    animation-delay: 1s;
-}
-
-#balloon3 {
-    background: radial-gradient(circle, rgba(255,255,255,0.6), #61ffab);
-    animation-delay: 2s;
+#rose2 {
+    animation-delay: 1.5s;
 }
 
 @keyframes float {
@@ -85,12 +77,12 @@ body {
 
 .footer {
     margin-top: 20px;
-    border-top: 2px dashed #ff6f61;
+    border-top: 2px dashed #8b0000;
     padding-top: 10px;
 }
 
 .footer p {
     margin: 5px 0;
     font-size: 16px;
-    color: #555;
+    color: #bbb;
 }
