@@ -1,0 +1,96 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.gift-card {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #ffffff, #ffe6e6);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    background-color: #ff6f61;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+.content p {
+    margin: 15px 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.balloons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.balloon {
+    width: 50px;
+    height: 80px;
+    background: radial-gradient(circle, rgba(255,255,255,0.6), #ff6f61);
+    border-radius: 50% 50% 0 0;
+    position: relative;
+    margin: 0 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+#balloon1 {
+    background: radial-gradient(circle, rgba(255,255,255,0.6), #ff6f61);
+}
+
+#balloon2 {
+    background: radial-gradient(circle, rgba(255,255,255,0.6), #ffab61);
+    animation-delay: 1s;
+}
+
+#balloon3 {
+    background: radial-gradient(circle, rgba(255,255,255,0.6), #61ffab);
+    animation-delay: 2s;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.footer {
+    margin-top: 20px;
+    border-top: 2px dashed #ff6f61;
+    padding-top: 10px;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #555;
+}
