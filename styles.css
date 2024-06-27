@@ -1,29 +1,60 @@
 body {
-    background-color: #ffe0f0;
-    color: #ff69b4;
+    background-color: #ffebf0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
     text-align: center;
-    border: 2px solid #ff69b4;
-    padding: 20px;
+    background-color: #fff;
+    padding: 40px;
     border-radius: 15px;
-    background-color: #fff0f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.cake {
-    width: 200px;
+h1 {
+    color: #ff6f91;
+    font-size: 36px;
+}
+
+.balloons {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
+.balloon {
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 0 0 50px 50px;
+    margin: 0 10px;
+    position: relative;
+}
+
+.balloon::after {
+    content: '';
+    display: block;
+    width: 2px;
+    height: 50px;
+    background-color: #555;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.balloon.red { background-color: #ff6f91; }
+.balloon.blue { background-color: #6fc3ff; }
+.balloon.green { background-color: #6fff91; }
+.balloon.yellow { background-color: #fff56f; }
+
 button {
-    background-color: #ff69b4;
+    background-color: #ff6f91;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -34,7 +65,7 @@ button {
 }
 
 button:hover {
-    background-color: #ff85a2;
+    background-color: #ff8fab;
 }
 
 .hidden {
@@ -44,4 +75,5 @@ button:hover {
 p {
     margin-top: 20px;
     font-size: 20px;
+    color: #333;
 }
