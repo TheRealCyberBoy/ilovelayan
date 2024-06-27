@@ -1,88 +1,47 @@
 body {
+    background-color: #ffe0f0;
+    color: #ff69b4;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
     font-family: 'Comic Sans MS', cursive, sans-serif;
-    background: linear-gradient(to right, #2c2c2c, #1a1a1a);
 }
 
-.gift-card {
-    width: 400px;
-    padding: 20px;
-    border: 2px solid #8b0000;
-    border-radius: 15px;
-    background: linear-gradient(to bottom, #333, #000);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+.container {
     text-align: center;
-    position: relative;
-    overflow: hidden;
+    border: 2px solid #ff69b4;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #fff0f5;
+}
+
+.cake {
+    width: 200px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #ff69b4;
     color: white;
-}
-
-.header {
-    background-color: #8b0000;
-    color: white;
-    border-radius: 15px 15px 0 0;
-    padding: 15px 0;
-    margin-bottom: 20px;
-}
-
-.header h1 {
-    margin: 0;
-    font-size: 28px;
-}
-
-.content {
-    position: relative;
-    z-index: 1;
-}
-
-.content p {
-    margin: 15px 0;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
     font-size: 18px;
-    color: #ddd;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.roses {
-    display: flex;
-    justify-content: center;
+button:hover {
+    background-color: #ff85a2;
+}
+
+.hidden {
+    display: none;
+}
+
+p {
     margin-top: 20px;
-}
-
-.rose {
-    width: 80px;
-    height: auto;
-    margin: 0 10px;
-    animation: float 3s ease-in-out infinite;
-}
-
-#rose1 {
-    animation-delay: 0s;
-}
-
-#rose2 {
-    animation-delay: 1.5s;
-}
-
-@keyframes float {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-.footer {
-    margin-top: 20px;
-    border-top: 2px dashed #8b0000;
-    padding-top: 10px;
-}
-
-.footer p {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #bbb;
+    font-size: 20px;
 }
